@@ -10,7 +10,6 @@ function App() {
   const changeIncome = (evt: any) => {
     setIncome(evt.target.value);
     if (Number(evt.target.value) > 0) {
-      console.log("setting false");
       setIsAnnual(false);
     }
   };
@@ -18,7 +17,6 @@ function App() {
   const changeAnnual = (evt: any) => {
     setAnnual(evt.target.value);
     if (Number(evt.target.value) > 0) {
-      console.log("setting true");
       setIsAnnual(true);
     }
   };
@@ -34,7 +32,7 @@ function App() {
           0.0244 *
           100
       ) / 100,
-    [income, debt]
+    [income, debt, annual, isAnnual]
   );
 
   return (
