@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.row .inputbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.moneyinput {
+  display: flex;
+  align-items: center;
+}
+
+.moneyinput > span {
+  height: 100%;
+  background-color: gray;
+  border-radius: 5px 0 0 5px;
+  display: inline-block;
+  padding: 6px 8px;
+}
+
+.moneyinput > input {
+  border-radius: 0 5px 5px 0;
+  background-color: #242424;
+  font-size: 1.2rem;
+  width: 6rem;
+  border: 1px solid rgb(133, 133, 133);
+  padding: 0.4rem;
+}
+
+#outputbox {
+  font-size: 1.75rem;
+}
+
+#debtlabel {
+  margin-top: 1rem;
+}
+
+.moneyinput:has(.inactive) {
+  opacity: 0.4;
+}
